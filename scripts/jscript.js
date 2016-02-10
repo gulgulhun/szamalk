@@ -20,7 +20,7 @@ var elements = document.getElementsByClassName("slider_staff");
 var scount = 0;
 
 
-function RightSlide(){
+function slideRight(){
 	scount++;
 	if (scount == 4) scount = 0;
 	if (scount == 0){
@@ -44,7 +44,7 @@ function RightSlide(){
 		elements[0].id = "right";
 	}
 }
-function LeftSlide(){
+function slideLeft(){
 	scount--;
 	if (scount == -1) scount = 3;
 	if (scount == 0){

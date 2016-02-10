@@ -51,7 +51,7 @@ div {
 }
 
 
-#left, #right, #middle {
+.left, .right, .middle {
   display: block;
   width: 30%;
   height: 200px;
@@ -65,21 +65,21 @@ div {
   border-radius: 10px/30px;
 }
 
-#left:hover, #right:hover, #middle:hover {
+.left:hover, .right:hover, .middle:hover {
   background-color: #999;
 }
 
-#left {
+.left {
   float: left;
 }
 
-#middle {
+.middle {
   float: left;
   margin-left: 0.85%;
   margin-right: 0.85%;
 }
 
-#right {
+.right {
   float: right;
 }
 

@@ -2,15 +2,15 @@ var elements = document.getElementsByClassName("slider_staff");
 var scount = 0;
 
 var timer;
-Folytat();
-function Leall(){
+folytat();
+function leall(){
 	clearInterval(timer);
 }
-function Folytat(){
-	timer = setInterval(function() {  RightSlide(); }, 3000);
+function folytat(){
+	timer = setInterval(function() {  slideRight(); }, 3000);
 }
 
-function RightSlide(){
+function slideRight(){
 	scount++;
 	if (scount == elements.length) scount = 0;
 	for (var i = 0; i < elements.length; i++)
@@ -31,7 +31,7 @@ function RightSlide(){
 		}
 	}
 }
-function LeftSlide(){
+function slideLeft(){
 	scount--;
 	if (scount == -1) scount = elements.length - 1;
 	for (var i = 0; i < elements.length; i++)

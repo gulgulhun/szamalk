@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SlidePróba2</title>
-<meta charset="UTF-8">
-<meta name="description" content="Project munka, alapok, a slider normálisabb verziója">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<!-- Külső CSS -->
-<link rel="stylesheet" href="stilus.css">
-<!-- Belső CSS -->
-<style>
-	
-	#foslide{
-		margin: 0;
-		padding: 3px;
-		height: 385px;
-	}
-	
-	#left, #right{
-		display: block;
-		width: 47%;
-		height: 190px;
-		margin-left: 5px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	#left{
-		float: left;
-	}
-	#right{
-		float: right;
-	}
-	.slider_staff{
-		display: none;
-	}
+  <title>SlidePróba2</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Project munka, alapok, a slider normálisabb verziója">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <!-- Külső CSS -->
+  <link rel="stylesheet" href="stilus.css">
+  <!-- Belső CSS -->
+  <style>
 
-	.button {
-		background-color: #888;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		cursor: pointer;
-	}
-	#balsl{
-		margin-left: 20%;
-		float: left;
-	}
-	#jobbsl{
-		margin-right: 20%;
-		float: right;
-	}
-</style>
+    #foslide{
+      margin: 0;
+      padding: 3px;
+      height: 385px;
+    }
+
+    #left, #right{
+      display: block;
+      width: 47%;
+      height: 190px;
+      margin-left: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #left{
+      float: left;
+    }
+    #right{
+      float: right;
+    }
+    .slider_staff{
+      display: none;
+    }
+
+    .button {
+      background-color: #888;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    #balsl{
+      margin-left: 20%;
+      float: left;
+    }
+    #jobbsl{
+      margin-right: 20%;
+      float: right;
+    }
+  </style>
 </head>
 
 <body>
-<div id="befoglalo">
-	<div id="fej">
-		<h1>Oldal címe</h1>
-	</div>
-		<div id="main">
-			<ul>
-				<li><a href="index.html">Főoldal</a></li>
-			</ul>
-			<h2>Ez az oldal fő része, és most jön egy kis lipsum:</h2>
-			<p>
-				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			</p>
-			<div id="foslide">
-				<h2>Itt jön a slider szerű cucc</h2>
-				<div id="left" class="slider_staff">
-					<p>EGYNam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
-				</div>
-				<div id="right" class="slider_staff">
-					<p>KETTŐPraesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
-				</div>
-				<div class="slider_staff">
-					<p>HÁROMPraesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
-				</div>
-				<div class="slider_staff">
-					<p>NÉGYNam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
-				</div>
-				<div id="balsl" onclick="LeftSlide()" class="button">
-					&lt;&lt;&lt;
-				</div>
-				<div id="jobbsl" onclick="RightSlide()" class="button">
-					&gt;&gt;&gt;
-				</div>
-			</div>
-		</div>
-	<div id="potroh">
-		<h5> 2016 - Tom-Tom &copy;</h5>
-	</div>
-</div>
-<script src="scripts/jscript.js"></script>
+  <div id="befoglalo">
+    <div id="fej">
+      <h1>Oldal címe</h1>
+    </div>
+    <div id="main">
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+      </ul>
+      <h2>Ez az oldal fő része, és most jön egy kis lipsum:</h2>
+      <p>
+        Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div id="foslide">
+        <h2>Itt jön a slider szerű cucc</h2>
+        <div id="left" class="slider_staff">
+          <p>EGYNam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
+        </div>
+        <div id="right" class="slider_staff">
+          <p>KETTŐPraesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
+        </div>
+        <div class="slider_staff">
+          <p>HÁROMPraesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
+        </div>
+        <div class="slider_staff">
+          <p>NÉGYNam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
+        </div>
+        <div id="balsl" onclick="slideLeft()" class="button">
+          &lt;&lt;&lt;
+        </div>
+        <div id="jobbsl" onclick="slideRight()" class="button">
+          &gt;&gt;&gt;
+        </div>
+      </div>
+    </div>
+    <div id="potroh">
+      <h5> 2016 - Tom-Tom &copy;</h5>
+    </div>
+  </div>
+
+  <script src="scripts/jscript.js"></script>
+
 </body>
 
 </html>
