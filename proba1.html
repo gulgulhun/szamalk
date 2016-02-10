@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PROJECT</title>
+<meta charset="UTF-8">
+<meta name="description" content="Project munka, alapok">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<!-- Külső CSS -->
+<link rel="stylesheet" href="stilus.css">
+<!-- Belső CSS -->
+<style>
+
+	#main{
+		float: left;
+		width: 79%;
+	}
+	#jobb{
+		margin-left: 80%;
+		padding: 5px;
+	}
+	
+	#slider{
+		width: 500px;
+		height: 500px;
+		margin: auto;
+		maring-bottom: 0;
+	}
+	#slkezdet{
+		font-weight: bold;
+		border: 0;
+	}
+</style>
+</head>
+
+<body>
+<div id="befoglalo">
+	<div id="fej">
+		<h1>Oldal címe</h1>
+	</div>
+	<div id="tor">
+		<div id="main">
+			<h2>Ez az oldal fő része, és most jön a slider:</h2>
+			<p>
+				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			<div id="slider">
+				<img src="img/1.png" alt="egy">
+			</div>
+			<div id="slkezdet">
+				<div id="balsl" onclick="Left()" class="button">
+					<<<
+				</div>
+				<div id="jobbsl" onclick="Right()" class="button">
+					>>>
+				</div>
+			</div>
+		</div>
+		<div id="jobb">
+			<p>Jobb oldali kis menü</p>
+			<ul>
+				<li><a href="proba2.html">Ez itt a jobbik féle slider.</a></li>
+				<li><a href="proba3.html">Text-overflow mobilhoz.</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="potroh">
+		<h5> 2016 - Tom-Tom &copy;</h5>
+	</div>
+</div>
+<script src="scripts/jscript.js"></script>
+</body>
+
+</html>

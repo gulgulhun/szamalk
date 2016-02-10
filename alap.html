@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PROJECT</title>
+<meta charset="UTF-8">
+<meta name="description" content="Project munka, alapok">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<!-- Külső CSS -->
+<link rel="stylesheet" href="stilus.css">
+<!-- Belső CSS -->
+<style>
+	.button {
+		background-color: #888;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	#jobb{
+		margin-left: 80%;
+		padding: 5px;
+	}
+	#potroh{
+		margin-top: 20%;
+	}
+	
+
+</style>
+
+</head>
+
+<body>
+<div id="befoglalo">
+	<div id="fej">
+		<h1 onmouseover="ProbaFunct()" onmouseout="ProbaFunct2()" onclick="ProbaFunct3()">My web page</h1>
+	</div>
+	<div id="tor">
+		<div id="main">
+			<h2>Ez az oldal fő része, és most jön a slider:</h2>
+			<div id="Eltunhet">
+			<p>
+				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+			</div>
+			<p id="demo">A Paragraph</p>
+			<br><button type="button" onclick="myFunction()">Click Me!</button>
+			<br><button onclick="Cucc()">Legyen más lipsum!</button>
+			
+			<p id="proba"></p>
+			<p onclick="Eltunik()">Ha ide kattintassz, akkor az alatta lévő paragrafus el fog tűnni.</p>
+			<p id="elfogtunni">Nulla facilisi. In velit metus, rutrum a nunc a, ornare accumsan ante. Praesent orci dui, interdum quis blandit non, pretium iaculis libero. Fusce porttitor ultrices convallis. In pellentesque mi nisl, non lacinia felis tempor eget. Nulla accumsan egestas ex, non accumsan orci convallis quis. Suspendisse eu aliquam justo, vitae ultrices nisl. Cras sed augue tortor. Vestibulum euismod suscipit nisi cursus volutpat. Curabitur euismod nulla id purus tincidunt, nec fringilla massa scelerisque. Nullam ut orci vel neque molestie eleifend. Vestibulum ipsum tellus, fermentum ac eros vel, porttitor efficitur sem. Aliquam consequat placerat lorem a ultricies. Aliquam erat volutpat. Fusce faucibus mi vitae vehicula vehicula. Suspendisse mattis ligula nec gravida hendrerit.</p>
+		</div>
+		<div id="jobb">
+			<p>Jobb oldali kis menü</p>
+		</div>
+	</div>
+	<div id="potroh" onload="ProbaFunct4">
+		<h5> 2016 - Tom-Tom &copy;</h5>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
