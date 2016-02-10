@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SlidePróba3</title>
-<meta charset="UTF-8">
-<meta name="description" content="Project munka, alapok, a slider normálisabb verziója">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<!-- Külső CSS -->
-<link rel="stylesheet" href="styles/main.css">
-<!-- Belső CSS -->
-<style>
-	
-	
-</style>
+  <title>SlidePróba3</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Project munka, alapok, a slider normálisabb verziója">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <!-- Külső CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- Belső CSS -->
+  <style>
+
+
+  </style>
 </head>
 
 <body>
-<div id="befoglalo">
-	<div id="fej">
-		<h1>Oldal címe</h1>
-	</div>
-		<div id="main">
-			<ul>
-				<li><a href="#">Valami link</a></li>
-			</ul>
-			<h2>Ez az oldal fő része, és most jön egy kis lipsum:</h2>
-			<p>
-				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			</p>
-			<div id="foslide" onmouseover="Leall()" onmouseout="Folytat()">
-				<h2>Itt jön a slider szerű cucc</h2>
-				
-				<div id="balsl" onclick="LeftSlide()" class="button">
-					&lt;
-				</div>
-				<div id="jobbsl" onclick="RightSlide()" class="button">
-					&gt;
-				</div>
-				
-				<div class="slider_staff" id="left" onmouseout="KiemelVege(0)">
-					<h3>Első</h3>
-					<p>Nam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
-				</div>
-				<div class="slider_staff" id="middle" onmouseout="KiemelVege(1)">
-					<h3>Második</h3>
-					<p>Praesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
-				</div>
-				<div class="slider_staff" id="right" onmouseover="Kiemel(2)" onmouseout="KiemelVege(2)">
-					<h3>Harmadik</h3>
-					<p>Mauris ac purus faucibus, bibendum arcu eu, pulvinar elit. Aenean a ipsum lobortis, vestibulum sapien ac, vestibulum urna. In metus nunc, bibendum ut tortor id, iaculis blandit nisi. Aenean dapibus quam at enim convallis, et pulvinar mi posuere. Suspendisse eget neque aliquet, congue elit at, volutpat dolor. Maecenas at purus commodo, iaculis erat sed, aliquet risus. Donec neque massa, aliquam sollicitudin lorem sit amet, consequat ullamcorper dui. Donec eu eleifend ligula. Sed volutpat lacus ut rhoncus convallis. Vivamus eget tortor in lorem placerat maximus malesuada nec ex. In commodo justo vitae ligula porttitor suscipit. Integer nec accumsan tortor, ut tincidunt risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla rutrum nec nisl at hendrerit. Integer auctor scelerisque diam, ut semper ligula dapibus eget. Praesent viverra velit sed maximus imperdiet.</p>
-				</div>
-				<div class="slider_staff" onmouseover="Kiemel(3)" onmouseout="KiemelVege(3)">
-					<h3>Negyedik</h3>
-					<p>Fusce venenatis faucibus dui aliquam imperdiet. Cras porta a velit in pretium. Fusce sed mollis leo. Morbi finibus nisi non mauris tempus elementum eu in dui. Mauris commodo semper eleifend. Cras vulputate nisl metus, ut rhoncus velit sollicitudin sed. Fusce at ligula pulvinar, porta tortor lobortis, placerat est.</p>
-				</div>
-				<div class="slider_staff" onmouseover="Kiemel(4)" onmouseout="KiemelVege(4)">
-					<h3>Ötödik</h3>
-					<p>Nam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
-				</div>
-				<div class="slider_staff" onmouseover="Kiemel(5)" onmouseout="KiemelVege(5)">
-					<h3>Hatodik</h3>
-					<p>Praesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
-				</div>
-				<div class="slider_staff" onmouseover="Kiemel(6)" onmouseout="KiemelVege(6)">
-					<h3>Hetedik</h3>
-					<p>Fusce venenatis faucibus dui aliquam imperdiet. Cras porta a velit in pretium. Fusce sed mollis leo. Morbi finibus nisi non mauris tempus elementum eu in dui. Mauris commodo semper eleifend. Cras vulputate nisl metus, ut rhoncus velit sollicitudin sed. Fusce at ligula pulvinar, porta tortor lobortis, placerat est.</p>
-				</div>
-				<div class="slider_staff" onmouseover="Kiemel(7)" onmouseout="KiemelVege(7)">
-					<h3>Nyolcadik</h3>
-					<p>Mauris ac purus faucibus, bibendum arcu eu, pulvinar elit. Aenean a ipsum lobortis, vestibulum sapien ac, vestibulum urna. In metus nunc, bibendum ut tortor id, iaculis blandit nisi. Aenean dapibus quam at enim convallis, et pulvinar mi posuere. Suspendisse eget neque aliquet, congue elit at, volutpat dolor. Maecenas at purus commodo, iaculis erat sed, aliquet risus. Donec neque massa, aliquam sollicitudin lorem sit amet, consequat ullamcorper dui. Donec eu eleifend ligula. Sed volutpat lacus ut rhoncus convallis. Vivamus eget tortor in lorem placerat maximus malesuada nec ex. In commodo justo vitae ligula porttitor suscipit. Integer nec accumsan tortor, ut tincidunt risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla rutrum nec nisl at hendrerit. Integer auctor scelerisque diam, ut semper ligula dapibus eget. Praesent viverra velit sed maximus imperdiet.</p>
-				</div>
-			</div>
-		</div>
-	<div id="potroh">
-		<h5> 2016 - Tom-Tom &copy;</h5>
-	</div>
-</div>
-<script src="scripts/slidescript.js"></script>
+  <div id="befoglalo">
+    <div id="fej">
+      <h1>Oldal címe</h1>
+    </div>
+    <div id="main">
+      <ul>
+        <li><a href="#">Valami link</a></li>
+      </ul>
+      <h2>Ez az oldal fő része, és most jön egy kis lipsum:</h2>
+      <p>
+        Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque in neque sit amet velit blandit tempus. Etiam sollicitudin vitae mi et tincidunt. Proin lorem turpis, consequat vitae purus non, aliquam laoreet ipsum. Mauris sodales pellentesque metus eu maximus. Vivamus in metus a tellus venenatis sollicitudin. Donec nec arcu felis. Sed at varius enim. Duis ac tempor dui. Aliquam vitae dui vitae tellus sollicitudin dapibus. Fusce mollis ante ornare maximus eleifend. Curabitur eget pellentesque turpis, sit amet mattis metus. Nunc tincidunt, dui et semper placerat, odio diam fermentum felis, a gravida purus augue eu elit. Nulla pulvinar lectus in lacus aliquet viverra. Nam et arcu ut dui maximus venenatis. Nulla ultrices quam a dictum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div id="foslide" onmouseover="Leall()" onmouseout="Folytat()">
+        <h2>Itt jön a slider szerű cucc</h2>
+
+        <div id="balsl" onclick="LeftSlide()" class="button">
+          &lt;
+        </div>
+        <div id="jobbsl" onclick="RightSlide()" class="button">
+          &gt;
+        </div>
+
+        <div class="slider_staff" id="left" onmouseout="KiemelVege(0)">
+          <h3>Első</h3>
+          <p>Nam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
+        </div>
+        <div class="slider_staff" id="middle" onmouseout="KiemelVege(1)">
+          <h3>Második</h3>
+          <p>Praesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
+        </div>
+        <div class="slider_staff" id="right" onmouseover="Kiemel(2)" onmouseout="KiemelVege(2)">
+          <h3>Harmadik</h3>
+          <p>Mauris ac purus faucibus, bibendum arcu eu, pulvinar elit. Aenean a ipsum lobortis, vestibulum sapien ac, vestibulum urna. In metus nunc, bibendum ut tortor id, iaculis blandit nisi. Aenean dapibus quam at enim convallis, et pulvinar mi posuere. Suspendisse eget neque aliquet, congue elit at, volutpat dolor. Maecenas at purus commodo, iaculis erat sed, aliquet risus. Donec neque massa, aliquam sollicitudin lorem sit amet, consequat ullamcorper dui. Donec eu eleifend ligula. Sed volutpat lacus ut rhoncus convallis. Vivamus eget tortor in lorem placerat maximus malesuada nec ex. In commodo justo vitae ligula porttitor suscipit. Integer nec accumsan tortor, ut tincidunt risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla rutrum nec nisl at hendrerit. Integer auctor scelerisque diam, ut semper ligula dapibus eget. Praesent viverra velit sed maximus imperdiet.</p>
+        </div>
+        <div class="slider_staff" onmouseover="Kiemel(3)" onmouseout="KiemelVege(3)">
+          <h3>Negyedik</h3>
+          <p>Fusce venenatis faucibus dui aliquam imperdiet. Cras porta a velit in pretium. Fusce sed mollis leo. Morbi finibus nisi non mauris tempus elementum eu in dui. Mauris commodo semper eleifend. Cras vulputate nisl metus, ut rhoncus velit sollicitudin sed. Fusce at ligula pulvinar, porta tortor lobortis, placerat est.</p>
+        </div>
+        <div class="slider_staff" onmouseover="Kiemel(4)" onmouseout="KiemelVege(4)">
+          <h3>Ötödik</h3>
+          <p>Nam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
+        </div>
+        <div class="slider_staff" onmouseover="Kiemel(5)" onmouseout="KiemelVege(5)">
+          <h3>Hatodik</h3>
+          <p>Praesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
+        </div>
+        <div class="slider_staff" onmouseover="Kiemel(6)" onmouseout="KiemelVege(6)">
+          <h3>Hetedik</h3>
+          <p>Fusce venenatis faucibus dui aliquam imperdiet. Cras porta a velit in pretium. Fusce sed mollis leo. Morbi finibus nisi non mauris tempus elementum eu in dui. Mauris commodo semper eleifend. Cras vulputate nisl metus, ut rhoncus velit sollicitudin sed. Fusce at ligula pulvinar, porta tortor lobortis, placerat est.</p>
+        </div>
+        <div class="slider_staff" onmouseover="Kiemel(7)" onmouseout="KiemelVege(7)">
+          <h3>Nyolcadik</h3>
+          <p>Mauris ac purus faucibus, bibendum arcu eu, pulvinar elit. Aenean a ipsum lobortis, vestibulum sapien ac, vestibulum urna. In metus nunc, bibendum ut tortor id, iaculis blandit nisi. Aenean dapibus quam at enim convallis, et pulvinar mi posuere. Suspendisse eget neque aliquet, congue elit at, volutpat dolor. Maecenas at purus commodo, iaculis erat sed, aliquet risus. Donec neque massa, aliquam sollicitudin lorem sit amet, consequat ullamcorper dui. Donec eu eleifend ligula. Sed volutpat lacus ut rhoncus convallis. Vivamus eget tortor in lorem placerat maximus malesuada nec ex. In commodo justo vitae ligula porttitor suscipit. Integer nec accumsan tortor, ut tincidunt risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla rutrum nec nisl at hendrerit. Integer auctor scelerisque diam, ut semper ligula dapibus eget. Praesent viverra velit sed maximus imperdiet.</p>
+        </div>
+      </div>
+    </div>
+    <div id="potroh">
+      <h5> 2016 - Tom-Tom &copy;</h5>
+    </div>
+  </div>
+  <script src="scripts/slidescript.js"></script>
 </body>
 
 </html>
