@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+}
+
+.hatterkep{
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/ViragKepek_0024.jpg");
+  background-size: cover;
+  /*background-position: 0 -240px; -Ha nagy képnél pozicionáljuk, akkor szűkítésnél szétesik*/
+  width: 100%;
+  height: 600px;
+  position: absolute;
+}
+
+#slider_main{
+  float: left;
+  width: 80%;
+  margin: 150px 0 0 10%;  /*fent jobbra lent balra*/
+  text-align: center;
+  opacity: 0.8;
+}
+
+#slider_main div{
+  border: 1px solid pink;
+  background-color: lightgrey;
+  padding: 5px 0.5% 5px 0.5%;
+}
+
+.slide_flip{
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+.slide_menu{
+  display: none;
+  padding: 0 0.6% 0 0.6%;
+  background-color: lightgrey;
+  overflow: hidden;
+  text-align: justify;
+  border-radius: 0 0 10px 10px;
+}
+
+#button_left, #button_right{
+  margin: 0;
+  width: 5%;
+  line-height: 600px;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: grey;
+  opacity: 0.4;
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+  position: relative;
+}
+
+#button_left:hover, #button_right:hover{
+  opacity: 0.8;
+}
+
+#button_left{
+  float: left;
+}
+
+#button_right{
+  float: right;
+}
+
+#lab{
+  clear: both;
+  margin: 5px;
+  padding: 5px;
+}

@@ -10,8 +10,10 @@
   <!-- Belső CSS -->
   <style>
 
-
   </style>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
 </head>
 
 <body>
@@ -21,7 +23,7 @@
     </div>
     <div id="main">
       <ul>
-        <li><a href="#">Valami link</a></li>
+        <li><a href="jquery_proba.html">JQuery oldal</a></li>
       </ul>
       <h2>Ez az oldal fő része, és most jön egy kis lipsum:</h2>
       <p>
@@ -38,38 +40,43 @@
           &gt;
         </div>
 
-        <div class="slider_staff left" onmouseout="KiemelVege(0)">
+        <div class="slider_staff left">
           <h3>Első</h3>
           <p>Nam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
         </div>
-        <div class="slider_staff middle" onmouseout="KiemelVege(1)">
+        <div class="slider_staff middle">
           <h3>Második</h3>
           <p>Praesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
         </div>
-        <div class="slider_staff right" onmouseover="Kiemel(2)" onmouseout="KiemelVege(2)">
+        <div class="slider_staff right">
           <h3>Harmadik</h3>
           <p>Mauris ac purus faucibus, bibendum arcu eu, pulvinar elit. Aenean a ipsum lobortis, vestibulum sapien ac, vestibulum urna. In metus nunc, bibendum ut tortor id, iaculis blandit nisi. Aenean dapibus quam at enim convallis, et pulvinar mi posuere. Suspendisse eget neque aliquet, congue elit at, volutpat dolor. Maecenas at purus commodo, iaculis erat sed, aliquet risus. Donec neque massa, aliquam sollicitudin lorem sit amet, consequat ullamcorper dui. Donec eu eleifend ligula. Sed volutpat lacus ut rhoncus convallis. Vivamus eget tortor in lorem placerat maximus malesuada nec ex. In commodo justo vitae ligula porttitor suscipit. Integer nec accumsan tortor, ut tincidunt risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla rutrum nec nisl at hendrerit. Integer auctor scelerisque diam, ut semper ligula dapibus eget. Praesent viverra velit sed maximus imperdiet.</p>
         </div>
-        <div class="slider_staff" onmouseover="Kiemel(3)" onmouseout="KiemelVege(3)">
+        <div class="slider_staff">
           <h3>Negyedik</h3>
           <p>Fusce venenatis faucibus dui aliquam imperdiet. Cras porta a velit in pretium. Fusce sed mollis leo. Morbi finibus nisi non mauris tempus elementum eu in dui. Mauris commodo semper eleifend. Cras vulputate nisl metus, ut rhoncus velit sollicitudin sed. Fusce at ligula pulvinar, porta tortor lobortis, placerat est.</p>
         </div>
-        <div class="slider_staff" onmouseover="Kiemel(4)" onmouseout="KiemelVege(4)">
+        <div class="slider_staff">
           <h3>Ötödik</h3>
           <p>Nam finibus nisl finibus finibus efficitur. Cras cursus, nisi vel aliquet sollicitudin, ipsum elit mollis nulla, sit amet fermentum nisl lacus a sem. Aenean purus eros, maximus scelerisque efficitur non, tincidunt et lacus. Etiam dignissim, ex eget varius commodo, est dui tincidunt orci, sed auctor sapien nulla ac dolor. Vivamus finibus, libero sit amet porttitor eleifend, turpis lorem cursus turpis, sed fermentum sapien quam sit amet urna. Nullam ligula felis, eleifend vitae tempor quis, mollis eget velit. Vestibulum ut nunc mattis, tincidunt ex eget, fermentum arcu. Proin eu orci volutpat, feugiat nisi a, feugiat purus. Cras gravida nunc nibh, ut sodales dui iaculis eu. Sed id diam nisl. Ut sit amet sapien vel magna blandit faucibus. Morbi elementum leo sit amet purus iaculis, eget molestie tellus consequat. Proin interdum a enim eu hendrerit. Curabitur tortor ex, faucibus vitae ipsum a, condimentum pharetra mauris. Etiam bibendum blandit arcu, quis porta urna euismod tempus. In lacinia felis et magna suscipit tristique.</p>
         </div>
-        <div class="slider_staff" onmouseover="Kiemel(5)" onmouseout="KiemelVege(5)">
+        <div class="slider_staff">
           <h3>Hatodik</h3>
           <p>Praesent dapibus diam sapien, placerat condimentum leo aliquam quis. Ut pulvinar lorem in iaculis sagittis. Quisque euismod ligula urna, hendrerit gravida orci tempus vestibulum. Etiam urna tortor, venenatis ut egestas eu, pulvinar nec felis. Mauris sagittis est eu lectus rutrum, eget laoreet tortor varius. Etiam dictum massa a nisl vulputate, quis varius tortor consequat. Maecenas ut arcu eget elit efficitur blandit. Quisque consequat metus eget molestie auctor. Fusce eget lectus at lectus tincidunt vestibulum. Duis tristique gravida eros, in rhoncus diam. Suspendisse ac libero ornare, gravida turpis vel, consequat arcu. Curabitur id eros turpis. Cras quis libero non urna placerat molestie. Aliquam ut turpis efficitur, laoreet leo vitae, tincidunt magna.</p>
         </div>
-        <div class="slider_staff" onmouseover="Kiemel(6)" onmouseout="KiemelVege(6)">
+        <div class="slider_staff">
           <h3>Hetedik</h3>
           <p>Fusce venenatis faucibus dui aliquam imperdiet. Cras porta a velit in pretium. Fusce sed mollis leo. Morbi finibus nisi non mauris tempus elementum eu in dui. Mauris commodo semper eleifend. Cras vulputate nisl metus, ut rhoncus velit sollicitudin sed. Fusce at ligula pulvinar, porta tortor lobortis, placerat est.</p>
         </div>
-        <div class="slider_staff" onmouseover="Kiemel(7)" onmouseout="KiemelVege(7)">
+        <div class="slider_staff">
           <h3>Nyolcadik</h3>
           <p>Mauris ac purus faucibus, bibendum arcu eu, pulvinar elit. Aenean a ipsum lobortis, vestibulum sapien ac, vestibulum urna. In metus nunc, bibendum ut tortor id, iaculis blandit nisi. Aenean dapibus quam at enim convallis, et pulvinar mi posuere. Suspendisse eget neque aliquet, congue elit at, volutpat dolor. Maecenas at purus commodo, iaculis erat sed, aliquet risus. Donec neque massa, aliquam sollicitudin lorem sit amet, consequat ullamcorper dui. Donec eu eleifend ligula. Sed volutpat lacus ut rhoncus convallis. Vivamus eget tortor in lorem placerat maximus malesuada nec ex. In commodo justo vitae ligula porttitor suscipit. Integer nec accumsan tortor, ut tincidunt risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla rutrum nec nisl at hendrerit. Integer auctor scelerisque diam, ut semper ligula dapibus eget. Praesent viverra velit sed maximus imperdiet.</p>
         </div>
+		
+		<div id="slider_staff_left">
+			asdasdasd
+		</div>
+		
       </div>
     </div>
     <div id="potroh">
@@ -77,6 +84,13 @@
     </div>
   </div>
   <script src="scripts/slidescript.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("#left").click(function(){
+			$("#slider_staff_left").slideDown("slow");
+		});
+	});
+  </script>
 </body>
 
 </html>
