@@ -1,16 +1,17 @@
 $(document).ready(function(){
-    $(".slide_flip").click(function(){
-        $(".slide_menu").slideToggle("slow");
-    });
-});
+  function animateLeft() {
+    $(".hatterkep").animate({right: '+=100%'});
+  }
 
-$(document).ready(function(){
-    $("#button_right").click(function(){
-        $(".hatterkep").animate({right: '+=100%'});
-    });
-});
-$(document).ready(function(){
-    $("#button_left").click(function(){
-        $(".hatterkep").animate({right: '-=100%'});
-    });
+  function animateRight() {
+    $(".hatterkep").animate({right: '-=100%'});
+  }
+
+  function toggleSlide() {
+    $(".slide_menu").slideToggle(2000);
+  }
+
+  $(".slide_flip").click(toggleSlide);
+  $("#button_right").click(animateLeft);
+  $("#button_left").click(animateRight);
 });
