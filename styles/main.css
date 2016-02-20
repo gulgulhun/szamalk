@@ -1,22 +1,133 @@
-body{
+body, html {
   margin: 0;
+  height: 100%;
 }
-.felso{
+.felso {
+  width: 100%;
   background-color: black;
   color: white;
-  height: 300px;
+  height: 320px;
   padding-top: 30px;
-  padding-left: 40%;
+  padding-left: 38%;
   font-size: 24px;
+  float: left;
 }
 
-.also{
+.top_img {
+  float: left;
+  width: 50px;
+  margin-right: 50px;
+}
+
+.also {
   background-color: white;
 }
 
 
-#befoglalo{
+
+#befoglalo {
+  clear: both;
   position: absolute;
   background-color: lightgrey;
-  margin: 150px auto 0 auto;
+  width: 90%;
+  height: 100%;
+  min-height: 600px;
+  margin: 180px 5% 0 5%;
+  padding-bottom: 30px;
+}
+
+.main_bacground {
+  color: white;
+  background-image: url("../img/ViragKepek_0040.jpg");
+  background-size: cover;
+  height: 60%;
+}
+
+.menu_bar {
+  margin: 0 10% 0 10%;
+}
+
+.menu {
+  float: right;
+  padding: 15px 3% 15px 3%;
+  cursor: pointer;
+  
+}
+.menu:hover {
+  background-color: darkgrey;
+  opacity: 0.75;
+}
+
+.main {
+  clear: both;
+  padding: 60px;
+}
+
+.circles {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.outer_circle {
+  float: left;
+  background-color: black;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  opacity: 0.4;
+}
+
+.inner_circle {
+  background-color: black;
+  margin: 15px;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+
+.reg {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.reg input {
+  margin: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.reg_button {
+  width: 100px;
+  margin: 8px auto 0 auto;
+  background-color: white;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.reg_button :hover { opacity: 0.75; }
+.reg_button :active { opacity: 0.5; }
+
+
+.bottom {
+  clear: both;
+  position: absolute;
+  background-color: white;
+  margin: 30px 0 30px 0;
+  padding: 40px;
+  padding-top: 30px;
+}
+
+.bt_img {
+  float: right;
+  width: 200px;
 }
