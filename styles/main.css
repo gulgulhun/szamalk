@@ -1,7 +1,10 @@
+@import 'basics.css';
+
 body, html {
   margin: 0;
   height: 100%;
 }
+
 .felso {
   width: 100%;
   background-color: black;
@@ -51,8 +54,8 @@ body, html {
   float: right;
   padding: 15px 3% 15px 3%;
   cursor: pointer;
-  
 }
+
 .menu:hover {
   background-color: darkgrey;
   opacity: 0.75;
@@ -97,6 +100,7 @@ body, html {
   font-size: 22px;
   margin-top: 20px;
 }
+
 .reg input {
   margin: 8px;
   background-color: transparent;
@@ -105,17 +109,18 @@ body, html {
   border: 1px solid white;
 }
 
-.reg_button {
-  width: 100px;
+button.reg-button {
+  width: 124px;
   margin: 8px auto 0 auto;
+  border: none;
   background-color: white;
   color: black;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   font-size: 18px;
 }
-.reg_button :hover { opacity: 0.75; }
-.reg_button :active { opacity: 0.5; }
+button.reg-button :hover { opacity: 0.75; }
+button.reg-button :active { opacity: 0.5; }
 
 
 .bottom {

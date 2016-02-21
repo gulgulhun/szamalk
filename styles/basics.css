@@ -1,0 +1,11 @@
+body, html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.mrg-no {
+  margin: 0;
+}
