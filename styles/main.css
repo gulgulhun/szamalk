@@ -107,6 +107,7 @@ body, html {
   color: white;
   padding: 5px;
   border: 1px solid white;
+  border-radius: 10px;
 }
 
 button.reg-button {
@@ -118,9 +119,10 @@ button.reg-button {
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 10px;
 }
-button.reg-button :hover { opacity: 0.75; }
-button.reg-button :active { opacity: 0.5; }
+button.reg-button:hover, button.reg-button:focus { opacity: 0.75; }
+button.reg-button:active { opacity: 0.5; }
 
 
 .bottom {

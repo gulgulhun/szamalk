@@ -6,6 +6,10 @@ button {
   font-family: 'Ubuntu', sans-serif;
 }
 
+button:focus, input:focus, textarea:focus {
+  outline: none;
+}
+
 .mrg-no {
   margin: 0;
 }
