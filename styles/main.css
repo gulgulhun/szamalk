@@ -5,15 +5,22 @@ body, html {
   height: 100%;
 }
 
+
+/* Weboldal címe és háttere */
 .felso {
   width: 100%;
   background-color: black;
   color: white;
   height: 320px;
   padding-top: 30px;
-  padding-left: 38%;
   font-size: 24px;
   float: left;
+}
+
+.cim{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top_img {
@@ -27,7 +34,8 @@ body, html {
 }
 
 
-
+/* maga a weboldal
+ * fő rész */
 #befoglalo {
   clear: both;
   position: absolute;
@@ -46,26 +54,41 @@ body, html {
   height: 60%;
 }
 
-.menu_bar {
-  margin: 0 10% 0 10%;
+/* Menü sor */
+ul.menu_bar {
+  float: right;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: 1%;
 }
+ul.menu_bar li{ display: inline;}
 
 .menu {
   float: right;
-  padding: 15px 3% 15px 3%;
+  padding: 15px 2% 15px 2%;
   cursor: pointer;
+  margin: 0 6px;
 }
-
 .menu:hover {
-  background-color: darkgrey;
+  border-bottom: 3px solid darkgrey;
+  padding-bottom: 12px;
   opacity: 0.75;
 }
 
+.menu_active {
+  opacity: 0;
+  cursor: default;
+}
+.menu_active:hover { opacity: 0; }
+
+/* fő oldalrész */
 .main {
   clear: both;
-  padding: 60px;
+  padding: 8%;
 }
 
+/* Regisztrációs kör */
 .circles {
   position: absolute;
   left: 50%;
@@ -107,7 +130,7 @@ body, html {
   color: white;
   padding: 5px;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 button.reg-button {
@@ -119,12 +142,12 @@ button.reg-button {
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 button.reg-button:hover, button.reg-button:focus { opacity: 0.75; }
 button.reg-button:active { opacity: 0.5; }
 
-
+/* láb rész */
 .bottom {
   clear: both;
   position: absolute;
