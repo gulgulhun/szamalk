@@ -44,7 +44,7 @@ body, html {
   height: 100%;
   min-height: 600px;
   margin: 180px 5% 0 5%;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .main_bacground {
@@ -57,23 +57,26 @@ body, html {
 /* Menü sor */
 ul.menu_bar {
   float: right;
-  display: inline-block;
   padding: 0;
   margin: 0;
-  margin-right: 1%;
 }
-ul.menu_bar li{ display: inline;}
+
+ul.menu_bar li {
+  display: inline-block;
+}
 
 .menu {
+  border-top: 3px solid transparent;
   float: right;
-  padding: 15px 2% 15px 2%;
+  padding: 15px;
   cursor: pointer;
   margin: 0 6px;
 }
 .menu:hover {
-  border-bottom: 3px solid darkgrey;
+  border-top: 3px solid black;
   padding-bottom: 12px;
-  opacity: 0.75;
+  /*opacity: 0.75;*/
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .menu_active {
@@ -152,7 +155,7 @@ button.reg-button:active { opacity: 0.5; }
   clear: both;
   position: absolute;
   background-color: white;
-  margin: 30px 0 30px 0;
+  /*margin: 30px 0 30px 0;*/
   padding: 40px;
   padding-top: 30px;
 }
