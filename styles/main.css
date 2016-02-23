@@ -3,6 +3,7 @@
 body, html {
   margin: 0;
   height: 100%;
+  min-width: 900px;
 }
 
 
@@ -34,17 +35,18 @@ body, html {
 }
 
 
-/* maga a weboldal
- * fő rész */
+/* Maga a weboldal */
+ /* Fő rész */
 #befoglalo {
   clear: both;
   position: absolute;
   background-color: lightgrey;
+  min-width: 800px;
   width: 90%;
   height: 100%;
   min-height: 600px;
   margin: 180px 5% 0 5%;
-  /*padding-bottom: 30px;*/
+  padding-bottom: 30px;
 }
 
 .main_bacground {
@@ -52,50 +54,84 @@ body, html {
   background-image: url("../img/ViragKepek_0040.jpg");
   background-size: cover;
   height: 60%;
+  min-height: 400px;
 }
 
 /* Menü sor */
+/* Bejelentkezés ikon és gombok */
+.login {
+  position: absolute;
+  float: left;
+  height: 55px;
+  width: 60px;
+  background-color: white;
+  margin-left: 10%;
+  border-radius: 0 0 5px 5px;
+}
+
+.login_logo {
+  float: left;
+  width: 60px;
+  height: 100%;
+  background-image: url("../img/szamalk_logo_mini.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.login_menu {
+  display: none;
+  color: black;
+  margin-left: 55px;
+}
+
+/* Menü sáv */
 ul.menu_bar {
   float: right;
+  display: inline-block;
   padding: 0;
-  margin: 0;
+  margin: initial 5% initial initial;  
 }
 
 ul.menu_bar li {
   display: inline-block;
+  float: right;
 }
 
 .menu {
-  border-top: 3px solid transparent;
-  float: right;
-  padding: 15px;
+  padding: 15px 20px;
   cursor: pointer;
   margin: 0 6px;
 }
+
 .menu:hover {
-  border-top: 3px solid black;
+  border-bottom: 3px solid darkgrey;
   padding-bottom: 12px;
-  /*opacity: 0.75;*/
-  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.75;
 }
 
 .menu_active {
-  opacity: 0;
   cursor: default;
+  opacity: 0.5;
 }
-.menu_active:hover { opacity: 0; }
 
-/* fő oldalrész */
+.menu_active:hover {
+  padding-bottom: 15px;
+  border-bottom: 0;
+  opacity: 0.5;
+}
+
+/* Fő oldalrész */
 .main {
   clear: both;
   padding: 8%;
 }
 
 /* Regisztrációs kör */
-.circles {
+.circles, .reg {
   position: absolute;
-  left: 50%;
+  left: 89%;
   transform: translate(-50%, 0);
+  display: none;
 }
 
 .outer_circle {
@@ -118,9 +154,6 @@ ul.menu_bar li {
 
 .reg {
   width: 30%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
   padding: 20px;
   text-align: center;
   font-size: 22px;
@@ -150,12 +183,12 @@ button.reg-button {
 button.reg-button:hover, button.reg-button:focus { opacity: 0.75; }
 button.reg-button:active { opacity: 0.5; }
 
-/* láb rész */
+/* Láb rész */
 .bottom {
   clear: both;
   position: absolute;
   background-color: white;
-  /*margin: 30px 0 30px 0;*/
+  margin: 30px 0 30px 0;
   padding: 40px;
   padding-top: 30px;
 }
